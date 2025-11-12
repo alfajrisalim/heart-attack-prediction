@@ -1,51 +1,40 @@
-# ❤️ Heart Attack Prediction using Machine Learning
+# ❤️ Heart Attack Prediction using Machine Learning (SVM)
 
-This project aims to predict the likelihood of a heart attack based on patient health indicators using machine learning classification algorithms.
+This project aims to build a machine learning model to **predict the risk of heart attack** based on medical features such as cholesterol level, maximum heart rate, age, chest pain type, and more.
 
-## 📌 Project Overview
-Cardiovascular disease is one of the leading causes of death worldwide. Early detection can prevent severe outcomes and give patients a higher chance of survival.
-
-In this project, we:
-- Performed exploratory data analysis (EDA)
-- Preprocessed the dataset (handling missing values, normalization, encoding, etc.)
-- Compared models based on accuracy, precision, recall, and ROC-AUC
-
+Dataset used in this project: **Heart Disease UCI**  
+(Source: Kaggle / UCI Machine Learning Repository)
 
 ---
 
-## 🔬 Dataset
-The dataset contains patient medical features including:
-
-| Variable | Description |
-|----------|-------------|
-| age      | Age of the person |
-| sex      | 0 = female, 1 = male |
-| trtbps   | Resting blood pressure |
-| chol     | Cholesterol level |
-| thalachh | Maximum heart rate |
-| cp       | Chest pain type |
-| ...      | and more clinical health variables |
-
-> Source: https://www.kaggle.com/code/kanncaa1/heart-attack-analysis-prediction
+## 📌 Project Goals
+- Menganalisis fitur–fitur kesehatan yang berpengaruh pada risiko serangan jantung.
+- Membangun model Machine Learning menggunakan **Support Vector Machine (SVM)**.
+- Melakukan tuning hyperparameter menggunakan **GridSearchCV**.
+- Mengevaluasi performa model menggunakan **Accuracy, Confusion Matrix, dan ROC–AUC Curve**.
 
 ---
 
-## 🧠 Machine Learning Models Used
-SVM
+## 🧠 Machine Learning Workflow
+
+| Step | Description |
+|------|-------------|
+| 1. Load dataset | Import dataset dan melihat struktur data |
+| 2. Exploratory Data Analysis | Heatmap correlation dan distribusi fitur |
+| 3. Data preprocessing | Scaling, train-test split |
+| 4. Model training | SVM classifier |
+| 5. Hyperparameter tuning | Grid Search (C, gamma, kernel) |
+| 6. Evaluation | Accuracy, confusion matrix, ROC–AUC |
 
 ---
 
-##  Tech Stack
-- Python
-- NumPy, Pandas
-- Scikit-learn
-- Matplotlib & Seaborn
-- Jupyter Notebook
+## 📊 Key Findings
 
----
+- Dataset sedikit **imbalanced** → Target label:
+  - 1 (Heart Attack): 165 data
+  - 0 (Healthy): 138 data
 
+➡️ Masih dianggap **seimbang**, sehingga **SMOTE tidak wajib**.
 
+- Parameter terbaik hasil tuning:
 
-
-# Run notebook
-jupyter notebook HeartAttackPrediction.ipynb
