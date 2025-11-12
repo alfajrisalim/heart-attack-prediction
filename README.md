@@ -37,4 +37,23 @@ Dataset used in this project: **Heart Disease UCI**
 ➡️ Masih dianggap **seimbang**, sehingga **SMOTE tidak wajib**.
 
 - Parameter terbaik hasil tuning:
+Best Parameters: {'C': 1, 'gamma': 'scale', 'kernel': 'rbf'}
+Best Score (cross-validation): 0.8224
 
+## 🛠️ Tech Stack
+
+| Component | Tools |
+|----------|-------|
+| Language | Python 3.9+ |
+| Machine Learning | scikit-learn |
+| Visualization | Matplotlib, Seaborn |
+| Notebook | Jupyter Notebook |
+
+---
+
+## 📦 Installation & Running
+
+### Clone repository
+```bash
+git clone https://github.com/alfajrisalim/heart-attack-prediction.git
+cd heart-attack-prediction
